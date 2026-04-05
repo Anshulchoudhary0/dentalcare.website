@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DentaCare Pro — Your Best Dental Experience Awaits</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="topbar-left">
+      <span><i class="fas fa-phone"></i> +91 8802662704</span>
+      <span><i class="fas fa-envelope"></i> amitksao88@gmail.com</span>
+      <span><i class="fas fa-map-marker-alt"></i> Gali No. 4, Qutub Vihar I, Block A, Qutub Vihar, Delhi, 110071</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/geeta_dental_care?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+      
+      
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fas fa-tooth"></i></span>
+        <span class="logo-text">Geeta Dental<strong> Care</strong> and Implant Center </span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#dentists" class="nav-link">Dentists</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <a href="#appointment" class="btn-primary nav-cta">Book Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-animate="fadeLeft">
+        <div class="hero-badge">
+          <i class="fas fa-star"></i> Top-Notch Dental Care, Just for You
+        </div>
+        <h1 class="hero-title">
+          Your <span class="highlight">Best Dental</span><br/>Experience Awaits
+        </h1>
+        <p class="hero-desc">
+          World-class dental care with a gentle touch. We combine advanced technology
+          with compassionate service to give you the smile you deserve.
+        </p>
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary"><i class="fas fa-tooth"></i> Explore Our Services</a>
+          <a href="#video" class="btn-outline"><i class="fas fa-play"></i> Watch Video</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="1500">0</span><span>+</span>
+            <p>Happy Patients</p>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-count="10">0</span><span>+</span>
+            <p>Years Experience</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="hero-image" data-animate="fadeRight">
+  <div class="hero-img-wrapper">
+    <div class="hero-img-circle"></div>
+
+    <div class="hero-img-placeholder">
+      <img src="imagesdoctor-profile.jpg" alt="Expert Dentist" class="main-hero-img">
+    </div>
+
+    <div class="hero-badge-float badge-f1">
+      <i class="fas fa-shield-alt"></i> Safe & Hygienic
+    </div>
+    <div class="hero-badge-float badge-f2">
+      <i class="fas fa-award"></i> Award Winning
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Appointment Quick Form -->
+    <div class="quick-appointment" id="appointment">
+      <div class="qa-container">
+        <div class="qa-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Your Name" />
+        </div>
+        <div class="qa-field">
+          <i class="fas fa-phone"></i>
+          <input type="text" placeholder="Phone Number" />
+        </div>
+        <div class="qa-field">
+          <i class="fas fa-calendar-alt"></i>
+          <input type="date" />
+        </div>
+        <div class="qa-field">
+          <i class="fas fa-clock"></i>
+          <select>
+            <option>Preferred Time</option>
+            <option>9:00 AM</option>
+            <option>11:00 AM</option>
+            <option>2:00 PM</option>
+            <option>4:00 PM</option>
+          </select>
+        </div>
+        <button class="btn-primary qa-btn" onclick="bookAppointment()">
+          Book an Appointment
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-wrapper">
+    <div class="marquee-track">
+      <span><i class="fas fa-tooth"></i> General Dentistry</span>
+      <span><i class="fas fa-tooth"></i> Teeth Whitening</span>
+      <span><i class="fas fa-tooth"></i> Dental Implants</span>
+      <span><i class="fas fa-tooth"></i> Dental Sealants</span>
+      <span><i class="fas fa-tooth"></i> Orthodontics</span>
+      <span><i class="fas fa-tooth"></i> Root Canal</span>
+      <span><i class="fas fa-tooth"></i> General Dentistry</span>
+      <span><i class="fas fa-tooth"></i> Teeth Whitening</span>
+      <span><i class="fas fa-tooth"></i> Dental Implants</span>
+      <span><i class="fas fa-tooth"></i> Dental Sealants</span>
+      <span><i class="fas fa-tooth"></i> Orthodontics</span>
+      <span><i class="fas fa-tooth"></i> Root Canal</span>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== 
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="about-images" data-animate="fadeLeft">
+        <div class="about-img-main">
+          <div class="about-img-placeholder main-img">
+            <img src="photo_2026-04-06_03-19-28.jpg" alt="Expert Dentist" class="main-hero-img">
+          </div>
+        </div>
+        <div class="about-img-secondary">
+          <div class="about-img-placeholder secondary-img">
+            <img src="photo_2026-04-06_02-29-57.jpg" alt="Expert Dentist" class="main-hero-img">
+          </div>
+          </div>
+        </div>
+        <div class="about-badge-circle">
+          <span>10+</span>
+          <small>Years of Trust</small>
+        </div>
+      </div>
+      <div class="about-content" data-animate="fadeRight">
+        <div class="section-tag">About Us</div>
+        <h2 class="section-title">10+ Years of Expertise<br/><span class="highlight">in Dental Care</span></h2>
+        <p class="section-desc">
+          We are dedicated to providing exceptional dental care that transforms smiles
+          and changes lives. Our team of experienced professionals uses the latest
+          technology to ensure your comfort and satisfaction.
+        </p>
+        <ul class="about-features">
+          <li><i class="fas fa-check-circle"></i> Premium Dental Services You Can Trust</li>
+          <li><i class="fas fa-check-circle"></i> Award-Winning Experts in Dental Care</li>
+          <li><i class="fas fa-check-circle"></i> Dedicated Experts Behind Every Smile</li>
+          <li><i class="fas fa-check-circle"></i> State-of-the-Art Equipment & Technology</li>
+        </ul>   
+        <a href="#contact" class="btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section> -->
+  <section class="about" id="about">
+  <div class="section-container">
+    
+    <div class="about-images" data-animate="fadeLeft">
+      <div class="about-img-main">
+        <div class="about-img-placeholder main-img">
+          <img src="photo_2026-04-06_03-19-28.jpg" alt="Expert Dentist" class="main-hero-img">
+        </div>
+      </div>
+      
+      <div class="about-img-secondary">
+        <div class="about-img-placeholder secondary-img">
+          <img src="photo_2026-04-06_02-29-57.jpg" alt="Expert Dentist" class="main-hero-img">
+        </div>
+      </div>
+
+      <div class="about-badge-circle">
+        <span>10+</span>
+        <small>Years of Trust</small>
+      </div>
+    </div> <div class="about-content" data-animate="fadeRight">
+      <div class="section-tag">About Us</div>
+      <h2 class="section-title">10+ Years of Expertise<br/><span class="highlight">in Dental Care</span></h2>
+      <p class="section-desc">
+        We are dedicated to providing exceptional dental care that transforms smiles
+        and changes lives.
+      </p>
+      <ul class="about-features">
+        <li><i class="fas fa-check-circle"></i> Premium Dental Services</li>
+        <li><i class="fas fa-check-circle"></i> Award-Winning Experts</li>
+      </ul>
+      <a href="#contact" class="btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+  </div> </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <div class="section-tag">Our Services</div>
+        <h2 class="section-title">A Wide Range of Services<br/>for <span class="highlight">Your Best Smile</span></h2>
+        <a href="#contact" class="btn-outline small">Explore All Services</a>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-animate="fadeUp" data-delay="0">
+          <div class="service-img">
+            <div class="service-img-placeholder"><i class="fas fa-teeth"></i></div>
+            <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          </div>
+          <h3>General Dentistry</h3>
+          <p>Comprehensive oral health care including checkups, cleanings, fillings, and preventive treatments for all ages.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fadeUp" data-delay="100">
+          <div class="service-img">
+            <div class="service-img-placeholder"><i class="fas fa-user-md"></i></div>
+            <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          </div>
+          <h3>Dental Implants</h3>
+          <p>Permanent tooth replacement solutions that look, feel, and function just like your natural teeth.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fadeUp" data-delay="200">
+          <div class="service-img">
+            <div class="service-img-placeholder"><i class="fas fa-smile-beam"></i></div>
+            <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          </div>
+          <h3>Teeth Whitening</h3>
+          <p>Professional grade whitening treatments that remove stains and brighten your smile several shades.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fadeUp" data-delay="0">
+          <div class="service-img">
+            <div class="service-img-placeholder"><i class="fas fa-x-ray"></i></div>
+            <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          </div>
+          <h3>Orthodontics</h3>
+          <p>Braces, aligners, and other treatments to straighten teeth and correct bite issues for a perfect smile.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fadeUp" data-delay="100">
+          <div class="service-img">
+            <div class="service-img-placeholder"><i class="fas fa-procedures"></i></div>
+            <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          </div>
+          <h3>Root Canal Therapy</h3>
+          <p>Painless root canal treatments to save infected teeth and relieve pain with minimal discomfort.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fadeUp" data-delay="200">
+          <div class="service-img">
+            <div class="service-img-placeholder"><i class="fas fa-child"></i></div>
+            <div class="service-icon"><i class="fas fa-tooth"></i></div>
+          </div>
+          <h3>Pediatric Dentistry</h3>
+          <p>Gentle, fun, and effective dental care designed specifically for children in a welcoming environment.</p>
+          <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DENTISTS SECTION ===== -->
+  <section class="dentists" id="dentists">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <div class="section-tag">Our Team</div>
+        <h2 class="section-title">Meet Our <span class="highlight">Expert Dentists</span></h2>
+        <p class="section-subtitle">Highly qualified professionals dedicated to your oral health</p>
+      </div>
+      <div class="dentists-grid">
+        <div class="dentist-card" data-animate="fadeUp" data-delay="0">
+          <div class="dentist-img">
+            <img src="docter1.jpg" alt="Expert Dentist" class="main-hero-img">
+            
+            <div class="dentist-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instgram-i"></i></a>
+              
+            </div>
+          </div>
+          <div class="dentist-info">
+            <h3>Dr. Amit sao </h3>
+            <span>Expert Dentist</span>
+            <div class="dentist-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <small>(128 reviews)</small>
+            </div>
+          </div>
+        </div>
+        <div class="dentist-card" data-animate="fadeUp" data-delay="100">
+          <div class="dentist-img">
+            <img src="docter2.jgp.jpg" alt="Expert Dentist" class="main-hero-img">
+            <div class="dentist-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instgram"></i></a>
+              
+            </div>
+          </div>
+          <div class="dentist-info">
+            <h3>Dr. Sonali Sao</h3>
+            <span>Genral Dentist</span>
+            <div class="dentist-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <small>(97 reviews)</small>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+         
+  <!---- ===== WHY CHOOSE US ===== -->
+  <section class="why-us">
+    <div class="section-container why-us-inner">
+      <div class="why-us-content" data-animate="fadeLeft">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">We Make Dental Care<br/><span class="highlight">Comfortable & Easy</span></h2>
+        <p class="section-desc">From the moment you walk in, our priority is your comfort. We combine warmth, expertise, and cutting-edge technology.</p>
+        <div class="why-us-features">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+            <div>
+              <h4>Advanced Technology</h4>
+              <p>State-of-the-art equipment for precise, efficient treatments.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+            <div>
+              <h4>Gentle & Painless</h4>
+              <p>We prioritize your comfort with pain-free dentistry techniques.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Flexible Scheduling</h4>
+              <p>Early morning, evening, and weekend appointments available.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <h4>Affordable Plans</h4>
+              <p>Transparent pricing and insurance-friendly payment options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-us-visual" data-animate="fadeRight">
+        <div class="why-visual-card">
+          <div class="why-visual-inner">
+            <div class="big-tooth-icon"><i class="fas fa-tooth"></i></div>
+            <div class="why-badge w1"><i class="fas fa-trophy"></i> Best Dental Clinic 2024</div>
+            <div class="why-badge w2"><i class="fas fa-users"></i> 15,000+ Patients Served</div>
+            <div class="why-badge w3"><i class="fas fa-star"></i> 4.9/5 Average Rating</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="section-container">
+      <div class="section-header" data-animate="fadeUp">
+        <div class="section-tag">Testimonials</div>
+        <h2 class="section-title">What Our <span class="highlight">Patients Say</span></h2>
+      </div>
+      <div class="testimonials-wrapper">
+        
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"I had gone through RCT at Geeta dental care. And i am more satisfied with the care Dr Amit did the process with minimal pain.
+Explains everything about the current situation of the teeth and possible cure for same.
+Had great experience.
+I highly recommend anyone who’s having tooth problem, get consultation with Dr Amit once.
+Thanking you."</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div><strong>Ashwani Pandey</strong><small> RCT Patient</small></div>
+            </div>
+          </div>
+         
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"My entire journey of dental treatment has been amazing. I trust Dr. Amit &amp; Dr. Sonali for the best advice and honesty. Strong recommendation — must visit for any dental issues."</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div><strong>Anshul Chaudhary</strong><small>Orthodontics Patient</small></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"We had a great experience. Dr. Amit was thorough, explained everything clearly, and genuinely cared. It's rare to find professionals where treatment comes first, not business. Highly recommend!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div><strong>Pranav Kumar</strong><small>Root Canal Patient</small></div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"The dental implants have completely changed my life. I can eat, smile, and laugh with full confidence. Best investment I've ever made for myself."</p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user"></i></div>
+              <div><strong>Thomas Wright</strong><small>Dental Implant Patient</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testi-btn" id="testiPrev"><i class="fas fa-chevron-left"></i></button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="section-container contact-inner">
+      <div class="contact-info" data-animate="fadeLeft">
+        <div class="section-tag">Contact Us</div>
+        <h2 class="section-title">Get In <span class="highlight">Touch With Us</span></h2>
+        <p class="section-desc">Have questions or want to book an appointment? We're here for you. Reach out anytime.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Our Location</strong>
+              <p>Gali No. 4, Qutub Vihar I, Block A, Qutub Vihar, Delhi, 110071</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <strong>Phone Number</strong>
+              <p>+918802662704</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email Address</strong>
+              <p>amitksao88@gmail.com</p>
+              
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Working Hours</strong>
+              <p>Mon–Fri: 10AM–8PM | Sat: 9AM–5PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form" data-animate="fadeRight">
+        <form id="contactForm" onsubmit="submitContact(event)">
+          <h3>Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="ivaan sau" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="ivaan@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 701297298" />
+          </div>
+          <div class="form-group">
+            <label>Service Interested In</label>
+            <select>
+              <option>Select a Service</option>
+              <option>General Dentistry</option>
+              <option>Teeth Whitening</option>
+              <option>Dental Implants</option>
+             
+              <option>cavity issue</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea rows="4" placeholder="Write your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#" class="logo white-logo">
+            <span class="logo-icon"><i class="fas fa-tooth"></i></span>
+            <span class="logo-text">Denta<strong>Care</strong></span>
+          </a>
+          <p>Transforming smiles, changing lives. Your trusted partner for comprehensive dental care and a healthier, happier you.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#dentists">Our Team</a></li>
+            
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">General Dentistry</a></li>
+            <li><a href="#">Teeth Whitening</a></li>
+            <li><a href="#">Dental Implants</a></li>
+            <li><a href="#">Orthodontics</a></li>
+            <li><a href="#">Root Canal</a></li>
+            <li><a href="#">Pediatric Dentistry</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe for dental tips, news, and special offers.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Your email address" />
+            <button class="btn-primary" onclick="subscribeNewsletter()"><i class="fas fa-paper-plane"></i></button>
+          </div>
+          <div class="footer-cert">
+            <span><i class="fas fa-shield-alt"></i> SSL Secured</span>
+            <span><i class="fas fa-award"></i> ADA Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 DentaCare Pro. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Success Toast -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMsg">Success!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
