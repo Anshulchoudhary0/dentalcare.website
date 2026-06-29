@@ -1,12 +1,4 @@
-/**
- * DentaCare Pro — script.js
- * All interactive behavior: navbar, animations,
- * counters, slider, forms, scroll effects
- */
 
-/* =========================================
-   1. NAVBAR — sticky + mobile toggle
-   ========================================= */
 const navbar  = document.getElementById('navbar');
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
